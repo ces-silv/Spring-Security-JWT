@@ -48,7 +48,7 @@ public class UserRestController {
     public ResponseEntity<?> registerUser(@RequestBody CreateUserEntity user) {
 
         if (user.getRoles() == null || user.getRoles().isEmpty()) {
-            user.setRoles(Set.of("ROLE_USER")); // Rol por defecto
+            user.setRoles(Set.of("ROLE_USER")); // Default Role
         }
         boolean status = userService.saveUser(user);
         return status ?
