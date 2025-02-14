@@ -10,7 +10,7 @@ Remember to change Database Credentials on "application.propperties" file.
 ## Contact
 
 Feel free to ask any question about the project 🤓.
-[Linkedin 🧐](https://www.linkedin.com/in/cesar-silva-hernandez/)
+[Linkedin 🧐](https://www.linkedin.com/in/cesar-silva-hernandez/)\n
 [Github :octocat:](https://github.com/ces-silv)
 
 
