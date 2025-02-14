@@ -47,9 +47,9 @@ public class AppSecurityConfig {
         return http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(req ->
-                        req.requestMatchers("/auth/**").permitAll()
-                                .requestMatchers("/admin/**").hasRole("ADMIN")
-                                .requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")
+                        req.requestMatchers("/auth/**").permitAll() // Everyone can do Auth request, such as Login or Register.
+                                .requestMatchers("/admin/**").hasRole("ADMIN") // Only admin can do Admin Requests.
+                                .requestMatchers("/user/**").hasAnyRole("USER", "ADMIN") // Either Admin or User can do User Requests.
                                 .anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class)

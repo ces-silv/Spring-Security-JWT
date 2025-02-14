@@ -27,8 +27,8 @@ public class CreateUserEntity {
     private String password;
 
     @ElementCollection(fetch = FetchType.EAGER)
-    @CollectionTable(name = "user_roles", // Cambia el nombre de la tabla intermedia
-            joinColumns = @JoinColumn(name = "user_id")) // Define la columna de relación con la tabla principal
-    @Column(name = "role") // Renombra la columna de los roles
+    @CollectionTable(name = "user_roles", // New Table - For Roles
+            joinColumns = @JoinColumn(name = "user_id")) // Foreign Key
+    @Column(name = "role")
     private Set<String> roles;
 }
