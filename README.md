@@ -9,10 +9,9 @@ Remember to change Database Credentials on "application.propperties" file.
 
 ## Contact
 
-Feel free to ask any question about the project 🤓.
-[Linkedin 🧐](https://www.linkedin.com/in/cesar-silva-hernandez/)\n
+Feel free to ask any question about the project 🤓.  
+[Linkedin 🧐](https://www.linkedin.com/in/cesar-silva-hernandez/)  
 [Github :octocat:](https://github.com/ces-silv)
-
 
 # Dependencies
 - spring-boot-starter-data-jpa: No version specified (uses the version from Spring Boot 3.4.2).
