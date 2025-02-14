@@ -11,16 +11,16 @@ public class UserController {
 
     @GetMapping("/dashboard")
     public ResponseEntity<String> userDashboard() {
-        return ResponseEntity.ok("Bienvenido, Usuario. Este es tu panel de usuario.");
+        return ResponseEntity.ok("User Dashboard - Available for Users and Admins");
     }
 
     @GetMapping("/profile")
     public ResponseEntity<String> userProfile() {
-        return ResponseEntity.ok("Perfil del usuario (accesible para USER y ADMIN).");
+        return ResponseEntity.ok("User Profile - Available for Users and Admins.");
     }
 
     @GetMapping("/tasks")
     public ResponseEntity<String> userTasks() {
-        return ResponseEntity.ok("Listado de tareas del usuario (accesible para USER y ADMIN).");
+        return ResponseEntity.ok("Tasks listed - Available for Users and Admins/");
     }
 }

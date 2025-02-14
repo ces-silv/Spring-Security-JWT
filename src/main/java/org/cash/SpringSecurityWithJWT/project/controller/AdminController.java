@@ -11,16 +11,16 @@ public class AdminController {
 
     @GetMapping("/dashboard")
     public ResponseEntity<String> adminDashboard() {
-        return ResponseEntity.ok("Bienvenido, Administrador. Este es el panel de administración.");
+        return ResponseEntity.ok("Administrator Dashboard Page.");
     }
 
     @GetMapping("/users")
     public ResponseEntity<String> listUsers() {
-        return ResponseEntity.ok("Listado de todos los usuarios (solo para administradores).");
+        return ResponseEntity.ok("Users listed for administration.).");
     }
 
     @GetMapping("/settings")
     public ResponseEntity<String> adminSettings() {
-        return ResponseEntity.ok("Configuración del sistema (solo para administradores).");
+        return ResponseEntity.ok("Settings listed for administration.");
     }
 }

@@ -46,9 +46,9 @@ public class UserRestController {
 
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@RequestBody CreateUserEntity user) {
-        // Aquí puedes asignar roles por defecto o permitir que se envíen en la solicitud
+
         if (user.getRoles() == null || user.getRoles().isEmpty()) {
-            user.setRoles(Set.of("USER")); // Rol por defecto
+            user.setRoles(Set.of("ROLE_USER")); // Rol por defecto
         }
         boolean status = userService.saveUser(user);
         return status ?
